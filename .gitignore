@@ -120,3 +120,17 @@ InitTestScene*.unity*
 *.mdb
 *.opendb
 *.VC.db
+Game Systems/Library/SourceAssetDB
+Game Systems/Library/ilpp.pid
+Game Systems/Library/Bee/TundraBuildState.state.map
+Game Systems/Library/Bee/tundra.digestcache
+Game Systems/Library/Bee/fullprofile.json
+Game Systems/Library/Bee/backend1.traceevents
+Game Systems/Library/ArtifactDB
+Game Systems/Library/ArtifactDB
+Game Systems/Library/Bee/backend1.traceevents
+Game Systems/Library/Bee/fullprofile.json
+Game Systems/Library/Bee/tundra.digestcache
+Game Systems/Library/Bee/TundraBuildState.state.map
+Game Systems/Library/ilpp.pid
+Game Systems/Library/SourceAssetDB
