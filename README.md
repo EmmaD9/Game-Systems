@@ -1,12 +1,14 @@
 # Game-Systems
 
-A brief description of what this project does and who it's for
+This is a compilation of different game systems I've created as both development practice and to use as building blocks for different game projects.
 
 
 ## Authors
 
 - [@emmad9](https://www.github.com/emmad9)
-## Team References (remove/edit once public)
+
+  
+## References
 
 [My Notes](https://docs.google.com/document/d/1D5y5JTQTpv3yg28pIwFh7uIuFE3ljGcEAbTXWI38iUE/edit?tab=t.0#heading=h.kqzmhh1z475)
 
