@@ -46,4 +46,9 @@ public class DiceManager : MonoBehaviour
         rb.AddTorque(randomTorque, ForceMode.Impulse);
 
     }
+
+    public void SpawnDice()
+    {
+
+    }
 }
