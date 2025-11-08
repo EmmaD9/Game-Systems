@@ -9,5 +9,8 @@ public class DiceManager : MonoBehaviour
     [SerializeField] private bool physicsDice;
     [SerializeField] private bool rgenDice;
 
-    //
+    public void RollDice()
+    {
+
+    }
 }
