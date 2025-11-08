@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class DiceManager : MonoBehaviour
@@ -12,11 +13,11 @@ public class DiceManager : MonoBehaviour
     [SerializeField] 
     private float range = 4;
 
+    private int diceValue;
+
     //[SerializeField] private float diceForce;
 
-    private void Start()
-    {
-    }
+    
     public void RollDice()
     {
         Debug.Log("die should roll");
@@ -49,6 +50,26 @@ public class DiceManager : MonoBehaviour
 
     public void SpawnDice()
     {
+        GameObject newDie = Instantiate(Die);
+        newDie.name = "Die";
 
+        Die = newDie;
+    }
+
+    private void Update()
+    {
+        Rigidbody rb = Die.GetComponent<Rigidbody>();
+        if (rb.velocity == Vector3.zero && rb.angularVelocity == Vector3.zero)
+        {
+            //Value Logic:
+
+            switch (Die.transform.rotation.y)
+            {
+                case 0:
+                    diceValue = 3;
+                    break;
+            }
+            
+        }
     }
 }
