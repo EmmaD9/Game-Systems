@@ -10,14 +10,14 @@ public class DiceManager : MonoBehaviour
 
     [SerializeField] private bool physicsDice;
     [SerializeField] private bool rgenDice;
-    [SerializeField] 
+    [SerializeField]
     private float range = 4;
 
     private int diceValue;
 
     //[SerializeField] private float diceForce;
 
-    
+
     public void RollDice()
     {
         Debug.Log("die should roll");
@@ -56,36 +56,36 @@ public class DiceManager : MonoBehaviour
         Die = newDie;
     }
 
-    private void Update()
+    void Update()
     {
         Rigidbody rb = Die.GetComponent<Rigidbody>();
-        if (rb.velocity == Vector3.zero && rb.angularVelocity == Vector3.zero)
+
+        //Value Logic: doesn't work right now
+        /*
+        switch (Die.transform.rotation.x)
         {
-            //Value Logic:
+            case 0:
+                diceValue = 3;
+                Debug.Log("dice value is " + diceValue);
+                break;
 
-            switch (Die.transform.rotation.x)
-            {
-                case 0:
-                    diceValue = 3;
-                    Debug.Log("dice value is " + diceValue);
-                    break;
+            case 90:
+                diceValue = 1;
+                Debug.Log("dice value is " + diceValue);
+                break;
 
-                case 90:
-                    diceValue = 1;
-                    Debug.Log("dice value is " + diceValue);
-                    break;
+            case 180:
+                diceValue = 6;
+                Debug.Log("dice value is " + diceValue);
+                break;
 
-                case 180:
-                    diceValue = 6;
-                    Debug.Log("dice value is " + diceValue);
-                    break;
+            case 270:
+                diceValue = 4;
+                Debug.Log("dice value is " + diceValue);
+                break;
 
-                case 270:
-                    diceValue = 4;
-                    Debug.Log("dice value is " + diceValue);
-                    break;
-            }
-            
+
         }
+        */
     }
 }
