@@ -139,3 +139,27 @@ Game Systems/Library/SourceAssetDB
 Game Systems/UserSettings/Layouts/default-2022.dwlt
 Game Systems/Library/ArtifactDB
 Game Systems/Library/SourceAssetDB
+
+
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Bb]uild/
+[Bb]uilds/
+[Ll]ogs/
+UserSettings/
+MemoryCaptures/
+*.csproj
+*.unityproj
+*.sln
+*.suo
+*.tmp
+*.user
+*.userprefs
+*.pidb
+*.booproj
+*.svd
+*.pdb
+*.mdb
+*.opendb
+*.VC.db
