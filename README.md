@@ -20,12 +20,15 @@ Check Builds Folder
 ## Citing Sources
 
  - [Unity Documentation](https://docs.unity3d.com/Manual/UnityManual.html)
- - update as needed...
+ - Updated as needed...
 ## Lessons Learned
 
 What did you learn while building this project? What challenges did you face and how did you overcome them?
 
-(update as needed per team member)
+- 3D Modelling (Blender and Adobe Substance Painter)
+- Unity UI/Event System 
+- Github Wikis and Documentation Practice
+
 ## Screenshots
 
 (placeholder!)
