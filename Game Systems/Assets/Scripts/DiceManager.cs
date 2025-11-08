@@ -63,10 +63,26 @@ public class DiceManager : MonoBehaviour
         {
             //Value Logic:
 
-            switch (Die.transform.rotation.y)
+            switch (Die.transform.rotation.x)
             {
                 case 0:
                     diceValue = 3;
+                    Debug.Log("dice value is " + diceValue);
+                    break;
+
+                case 90:
+                    diceValue = 1;
+                    Debug.Log("dice value is " + diceValue);
+                    break;
+
+                case 180:
+                    diceValue = 6;
+                    Debug.Log("dice value is " + diceValue);
+                    break;
+
+                case 270:
+                    diceValue = 4;
+                    Debug.Log("dice value is " + diceValue);
                     break;
             }
             
