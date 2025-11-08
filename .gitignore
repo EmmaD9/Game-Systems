@@ -177,3 +177,31 @@ Game Systems/Library/SourceAssetDB
 *.digestcache
 *.state
 *.map
+Game Systems/Library/SourceAssetDB
+Game Systems/UserSettings/Layouts/default-2022.dwlt
+*.dwlt
+Game Systems/Library/SourceAssetDB
+Game Systems/UserSettings/Layouts/default-2022.dwlt
+
+Game Systems/Library/
+Game Systems/Temp/
+Game Systems/Obj/
+Game Systems/Build/
+Game Systems/Builds/
+Game Systems/Logs/
+Game Systems/UserSettings/
+Game Systems/MemoryCaptures/
+*.csproj
+*.unityproj
+*.sln
+*.suo
+*.tmp
+*.user
+*.userprefs
+*.pidb
+*.booproj
+*.svd
+*.pdb
+*.mdb
+*.opendb
+*.VC.db
