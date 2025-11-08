@@ -163,3 +163,17 @@ MemoryCaptures/
 *.mdb
 *.opendb
 *.VC.db
+Game Systems/Library/ArtifactDB
+Game Systems/Library/Bee/backend1.traceevents
+Game Systems/Library/Bee/fullprofile.json
+Game Systems/Library/Bee/tundra.digestcache
+Game Systems/Library/Bee/tundra.log.json
+Game Systems/Library/Bee/TundraBuildState.state
+Game Systems/Library/Bee/TundraBuildState.state.map
+Game Systems/Library/ilpp.pid
+Game Systems/Library/SourceAssetDB
+*.traceevents
+*.json
+*.digestcache
+*.state
+*.map
