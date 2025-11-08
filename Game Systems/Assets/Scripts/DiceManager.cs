@@ -8,8 +8,8 @@ public class DiceManager : MonoBehaviour
 {
     [SerializeField] private GameObject Die;
 
-    [SerializeField] private bool physicsDice;
-    [SerializeField] private bool rgenDice;
+    //[SerializeField] private bool physicsDice;
+    //[SerializeField] private bool rgenDice;
     [SerializeField]
     private float range = 4;
 
