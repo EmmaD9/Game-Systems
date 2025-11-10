@@ -58,8 +58,13 @@ public class DiceManager : MonoBehaviour
 
     void Update()
     {
-        Rigidbody rb = Die.GetComponent<Rigidbody>();
+        //Rigidbody rb = Die.GetComponent<Rigidbody>();
 
+        //spawn on update to break the game (idk conner liked it)
+        //SpawnDice();
+        
+        
+        //
         //Value Logic: doesn't work right now
         /*
         switch (Die.transform.rotation.x)
