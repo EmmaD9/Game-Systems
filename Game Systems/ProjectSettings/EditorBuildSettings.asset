@@ -4,5 +4,8 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Dice3D.unity
+    guid: a795097db91dd2e45b4d0b25b6399a7a
   m_configObjects: {}
