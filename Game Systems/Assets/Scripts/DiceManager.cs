@@ -20,32 +20,39 @@ public class DiceManager : MonoBehaviour
 
     public void RollDice()
     {
-        Debug.Log("die should roll");
-        float diceForce = UnityEngine.Random.Range(-range, range);
-        Rigidbody rb = Die.GetComponent<Rigidbody>();
+        Debug.Log("rolling all dice");
 
-        //Reset velocities for consistent rolls
-        rb.velocity = Vector3.zero;
-        rb.angularVelocity = Vector3.zero;
+        // Find all GameObjects tagged as "die"
+        GameObject[] dice = GameObject.FindGameObjectsWithTag("Die");
 
-        //Random force in random direction
-        Vector3 randomDirection = new Vector3(
-        UnityEngine.Random.Range(-1f, 1f),
-        UnityEngine.Random.Range(0.5f, 1.5f), // ensure upward bias
-        UnityEngine.Random.Range(-1f, 1f)
-        ).normalized;
+        foreach (GameObject die in dice)
+        {
 
-        float forceMagnitude = UnityEngine.Random.Range(range * 0.8f, range * 1.2f);
-        rb.AddForce(randomDirection * forceMagnitude, ForceMode.Impulse);
+            float diceForce = UnityEngine.Random.Range(-range, range);
+            Rigidbody rb = die.GetComponent<Rigidbody>();
 
-        // Random torque for realistic spin
-        Vector3 randomTorque = new Vector3(
-            UnityEngine.Random.Range(-range, range),
-            UnityEngine.Random.Range(-range, range),
-            UnityEngine.Random.Range(-range, range)
-        );
-        rb.AddTorque(randomTorque, ForceMode.Impulse);
+            //Reset velocities for consistent rolls
+            rb.velocity = Vector3.zero;
+            rb.angularVelocity = Vector3.zero;
 
+            //Random force in random direction
+            Vector3 randomDirection = new Vector3(
+            UnityEngine.Random.Range(-1f, 1f),
+            UnityEngine.Random.Range(0.5f, 1.5f), // ensure upward bias
+            UnityEngine.Random.Range(-1f, 1f)
+            ).normalized;
+
+            float forceMagnitude = UnityEngine.Random.Range(range * 0.8f, range * 1.2f);
+            rb.AddForce(randomDirection * forceMagnitude, ForceMode.Impulse);
+
+            // Random torque for realistic spin
+            Vector3 randomTorque = new Vector3(
+                UnityEngine.Random.Range(-range, range),
+                UnityEngine.Random.Range(-range, range),
+                UnityEngine.Random.Range(-range, range)
+            );
+            rb.AddTorque(randomTorque, ForceMode.Impulse);
+        }
     }
 
     public void SpawnDice()
