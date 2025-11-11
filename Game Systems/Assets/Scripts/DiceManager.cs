@@ -57,6 +57,11 @@ public class DiceManager : MonoBehaviour
 
     public void SpawnDice()
     {
+        if (Die == null)
+        {
+            Debug.LogError("Die prefab not assigned!");
+            return;
+        }
         GameObject newDie = Instantiate(Die);
         newDie.name = "Die";
 
